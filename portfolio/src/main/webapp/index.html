@@ -2,103 +2,18 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Andrew's Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>Andrew's Portfolio</h1>
-      <img src="/images/ava.jpg" style="width: 500px"/>
-      <div class="aboutDesc">Picture description: my highschool graduation photo of me with name cards for events I have organized and the maths and science medals I have won</div>
-      
-      <a href="https://www.linkedin.com/in/andrew-nguyen-02/">LinkedIn</a>
-      <br/>
-      <a href="https://github.com/khanhnguyenvinh2002">Github</a>
-      <br/>
-
-    <button onclick="hello();">
-        Get hello
-      </button>
-      <p id="hello-container"></p>
-
-    <button onclick="getServerStats();">
-        Get random message from server
-    </button>
-    <p id="random-fact-container"></p>
-  
-      <button onclick="addRandomFact()">Get a fact about me!</button>
-      <div id="fact-container"></div>
-      <h2>Contact me</h2>
-      <form action="/form-handler" method="POST">
-        <p>Wanna connect? Send me a message!</p>
-        <textarea name="text-input" placeholder="Write me something, PLEASE!"></textarea>
-        <br/>
-        <input type="submit" />
-      </form>
-      <h2>About me</h2>
-      <div class="aboutContent"><p>My name is Khanh (Andrew) Nguyen, I am currently a sophomore at Brandeis University majoring in Computer Science and Business. I was born and grew up in Hanoi, the capital city of Vietnam.</p>
-        <p>Ever since I was a small kid, I enjoy seeing the world from different perspectives and trying to solve existing problems.</p>
-        <p>I went to Hanoi-Amsterdam high school for the gifted, where I specialized in Mathematics and had won various Maths competitions. In high school, I organized various events for my purposes, from teaching women coding to teaching students natural science intuitively with science experiments.</p>
-        <p>I also came to know about the technology industry during this time and its various opportunities to help shape the world in the foreseeable future. I decided to try Computer Science by learning Python and C++ and solving CodeForce and HackerRank problems. I am excited by the power of these technologies in helping solve real-world issues, and I decided to major in Computer Science to understand better what I can do with technology.</p>
-        <p>Now in Brandeis, I'm studying new coding languages, algorithms, data structures, higher mathematics, all of which help me achieve my goal. Each project I work on has its own story and mission, and certainly, there are more stories out there waiting to be discovered, and more problems waiting to be solved. Finding and solving these problems with technology is what keeps me up all day and night, and I'm excited for what is yet to come.</p>
-        <p>I will use this platform to write and share my knowledge, experiences, and thoughts during my journey with coding, and I hope you can find some interesting ideas or projects here. Feel free to message me if you have any ideas and we can turn them into reality together!</p>
-      </div>
-      <h2>My projects</h2>
-      <zero-md src="portfolio.md"></zero-md>
+      <h1>My Portfolio</h1>
+      <p>This is my portfolio.</p>
+      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Click here to get a random message:</p>
+      <button onclick="addRandomGreeting()">Hello</button>
+      <div id="greeting-container"></div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row row-middle"style={{margin: "0"}}>
-                <div class="col-lg-8 col-md-10" style="padding: 0">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a target="_blank" href="https://instagram.com/bebu.iw">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/andrewng2002">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank"  href="https://github.com/khanhnguyenvinh2002">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank"  href="https://www.linkedin.com/in/andrew-nguyen-02/">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-footer">
-                        Copyright &copy; Andrew Nguyen 2021 
-                        <br/>
-                        Created by <a class="footer-a link" href="https://www.facebook.com/andrewng2002">Andrew Nguyen</a> 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>

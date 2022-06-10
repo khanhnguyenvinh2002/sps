@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>knguyen-sps-summer22</googleCloudProjectId>
+    <googleCloudProjectId>YOUR_PROJECT_ID_HERE</googleCloudProjectId>
   </properties>
 
   <dependencies>
@@ -38,12 +38,8 @@
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
-    <dependency>
-    <groupId>com.google.code.gson</groupId>
-    <artifactId>gson</artifactId>
-    <version>2.9.0</version>
-    </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <!-- Copy static resources like html files into the output jar file. -->
