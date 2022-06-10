@@ -8,7 +8,7 @@ Engine to deploy that webpage to a public URL.
 You can return to this walkthrough anytime by running this command:
 
 ```bash
-teachme ~/software-product-sprint/walkthroughs/week-1-web-development/portfolio-walkthrough.md
+teachme ~/sps/walkthroughs/week-1-web-development/portfolio-walkthrough.md
 ```
 
 Click the **Start** button to begin!
@@ -56,7 +56,7 @@ First, make these changes to your code. (You only need to do this once.)
 -   Find the **Project ID** on that page. (It should be something like lknope-sps-seasonYY)
 -   Open the
     <walkthrough-editor-open-file
-        filePath="software-product-sprint/portfolio/pom.xml">
+        filePath="sps/portfolio/pom.xml">
       software-product-sprint/portfolio/pom.xml
     </walkthrough-editor-open-file>
     file.
