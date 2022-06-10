@@ -17,8 +17,26 @@
       <br/>
       <a href="https://github.com/khanhnguyenvinh2002">Github</a>
       <br/>
+
+    <button onclick="hello();">
+        Get hello
+      </button>
+      <p id="hello-container"></p>
+
+    <button onclick="getServerStats();">
+        Get random message from server
+    </button>
+    <p id="random-fact-container"></p>
+  
       <button onclick="addRandomFact()">Get a fact about me!</button>
       <div id="fact-container"></div>
+      <h2>Contact me</h2>
+      <form action="/form-handler" method="POST">
+        <p>Wanna connect? Send me a message!</p>
+        <textarea name="text-input" placeholder="Write me something, PLEASE!"></textarea>
+        <br/>
+        <input type="submit" />
+      </form>
       <h2>About me</h2>
       <div class="aboutContent"><p>My name is Khanh (Andrew) Nguyen, I am currently a sophomore at Brandeis University majoring in Computer Science and Business. I was born and grew up in Hanoi, the capital city of Vietnam.</p>
         <p>Ever since I was a small kid, I enjoy seeing the world from different perspectives and trying to solve existing problems.</p>
