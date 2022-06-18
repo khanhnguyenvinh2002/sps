@@ -50,11 +50,3 @@ async function getServerStats() {
     const statsListElement = document.getElementById('random-fact-container');
         statsListElement.innerText = stats[randomIntFromInterval(0,3)];
     }
-
-    /** Creates an <li> element containing text. */
-function createListElement(text) {
-    const liElement = document.createElement('li');
-    liElement.innerText = text;
-    return liElement;
- }
-  
