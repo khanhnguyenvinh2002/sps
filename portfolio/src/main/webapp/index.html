@@ -23,14 +23,26 @@
       </button>
       <p id="hello-container"></p>
 
+    <h1>Cloud image storage</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+    <p>Want to send me a cool image? Write something here:</p>
+    <textarea name="message"></textarea>
+    <br/>
+    <p>Upload an image:</p>
+    <input type="file" name="image">
+    <br/><br/>
+    <button>Submit</button>
+    </form>
+    <p><a href="/image-tasks">Click here to see all of the uploaded images!</a></p>
+    <h1>Fact section</h1>
     <button onclick="getServerStats();">
-        Get random message from server
+        Get random fact from server about me!
     </button>
     <p id="random-fact-container"></p>
   
-      <button onclick="addRandomFact()">Get a fact about me!</button>
+      <button onclick="addRandomFact()">Get a fact from client about me!</button>
       <div id="fact-container"></div>
-      <h2>Contact me</h2>
+        <h1>Stay in touch!</h1>
       <form action="/form-handler" method="POST">
         <p>Wanna connect? Send me a message!</p>
         <textarea name="text-input" placeholder="Write me something, PLEASE!"></textarea>
